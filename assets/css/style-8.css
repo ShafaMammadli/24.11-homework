@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 500px;
+    width: 85%;
+
+    display: grid;
+    grid-template-columns: 20% 25% 35%;
+    grid-template-rows: 30% 25% 45%;
+}
+
+.container div:nth-child(1) {
+    background-color: crimson;
+    grid-area: 1 / 1 / 3 / 2;
+}
+
+.container div:nth-child(2) {
+    background-color: rgb(69, 169, 159);
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.container div:nth-child(3) {
+    background-color: rgb(162, 134, 101);
+    grid-area: 1 / 3 / 2 / 4;
+}
+
+.container div:nth-child(4) {
+    background-color: rgb(170, 194, 214);
+    grid-area: 3 / 1 / 4 / 2;
+}
+
+.main {
+    grid-area: 2 / 2 / 4 / 4;
+
+    display: grid;
+    grid-template-columns: 25% 18% 30% 25%;
+    grid-template-rows: 55% 44%;
+}
+
+.main div:nth-child(1) {
+    background-color: rgb(162, 134, 101);
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.main div:nth-child(2) {
+    background-color: rgb(170, 194, 214);
+    grid-area: 1 / 2 / 2 / 4;
+}
+
+.main div:nth-child(3) {
+    background-color: crimson;
+    grid-area: 1 / 4 / 3 / 5;
+}
+
+.main div:nth-child(4) {
+    background-color: crimson;
+    grid-area: 2 / 1 / 3 / 3;
+}
+
+.main div:nth-child(5) {
+    background-color: rgb(69, 169, 159);
+    grid-area: 2 / 3 / 3 / 4;
+}
+
+div {
+    display: flex;
+    gap: 5px;
+}
